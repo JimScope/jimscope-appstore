@@ -1,0 +1,65 @@
+{
+  "name": "Minecraft RAD3",
+  "id": "minecraft-rad3",
+  "available": true,
+  "short_desc": "Roguelike Adventures and Dungeons 3 modded Minecraft server.",
+  "author": "JimScope",
+  "port": 25565,
+  "categories": ["gaming"],
+  "description": "Modded Minecraft server running the Roguelike Adventures and Dungeons 3 (RAD3) CurseForge modpack via itzg/minecraft-server. Auto-downloads the modpack on first boot.",
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "source": "https://github.com/itzg/docker-minecraft-server",
+  "exposable": false,
+  "supported_architectures": ["amd64", "arm64"],
+  "created_at": 1780686668736,
+  "updated_at": 1780686668736,
+  "dynamic_config": true,
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "CurseForge API Key",
+      "hint": "Get a free key at console.curseforge.com -> API Keys. Required to download the modpack.",
+      "required": true,
+      "env_variable": "CF_API_KEY"
+    },
+    {
+      "type": "text",
+      "label": "Memory",
+      "hint": "RAM allocated to the server, e.g. 6144M or 8G.",
+      "default": "6144M",
+      "required": false,
+      "env_variable": "MC_MEMORY"
+    },
+    {
+      "type": "text",
+      "label": "MOTD",
+      "hint": "Message shown in the server list.",
+      "default": "Roguelike Adventures",
+      "required": false,
+      "env_variable": "MC_MOTD"
+    },
+    {
+      "type": "text",
+      "label": "Operators",
+      "hint": "Admin usernames, comma-separated. Leave empty to set later.",
+      "required": false,
+      "env_variable": "MC_OPS"
+    },
+    {
+      "type": "text",
+      "label": "Whitelist",
+      "hint": "Allowed usernames, comma-separated. Leave empty to set later.",
+      "required": false,
+      "env_variable": "MC_WHITELIST"
+    },
+    {
+      "type": "boolean",
+      "label": "Enforce whitelist",
+      "hint": "Only whitelisted players can join. Enable only after filling the whitelist, or nobody can connect.",
+      "default": false,
+      "required": false,
+      "env_variable": "MC_ENFORCE_WHITELIST"
+    }
+  ]
+}
