@@ -1,0 +1,25 @@
+{
+  "name": "Ownfoil",
+  "id": "ownfoil",
+  "available": true,
+  "short_desc": "Self-hosted Tinfoil/CyberFoil shop for your Switch library (NSP/NSZ/XCI/XCZ).",
+  "author": "a1ex4",
+  "port": 8465,
+  "categories": [
+    "gaming"
+  ],
+  "description": "Ownfoil turns your Nintendo Switch game library into a self-hosted, customizable Tinfoil shop. Compatible with Tinfoil, CyberFoil and Sphaira. Serves NSP/NSZ/XCI/XCZ, auto-scans the library, generates the index, and supports private multi-user authentication. Upload your console keys to identify titles by content.",
+  "tipi_version": 1,
+  "version": "latest",
+  "source": "https://github.com/a1ex4/ownfoil",
+  "website": "https://github.com/a1ex4/ownfoil",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1781299184313,
+  "updated_at": 1781299184313,
+  "dynamic_config": true,
+  "form_fields": []
+}
